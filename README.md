@@ -1,13 +1,22 @@
-# HackerRank SQL Solutions
+# HackerRank SQL Solutions 💾
 
-This repository contains my solutions to SQL challenges on [HackerRank](https://www.hackerrank.com/).
+This repository contains my personal solutions to SQL challenges on [HackerRank](https://www.hackerrank.com/).
 
-## 🗂️ Categories
+## 🗂️ Folder Structure
 
-- Basic Select
-- Aggregation
-- Joins
-- Advanced SQL
+- `01_Basic_Select`: Basic SQL SELECT statements.
+- `02_Advanced_Select`: More complex SELECT queries.
+- `03_Aggregation`: Using COUNT, SUM, AVG, etc.
+- `04_Basic_Join`: Inner Joins and simple joins.
+- `05_Advanced_Join`: More complex join scenarios.
+- `06_Alternative_Queries`: Using CASE, IF, or nested queries.
 
-## ✅ Purpose
-To track my progress and share my SQL learning journey.
+Each `.sql` file is named based on the problem title and contains:
+- A short comment about the problem.
+- The SQL code that solves it.
+
+## 📚 Example
+
+```sql
+-- Problem: Select All from CITY table
+SELECT * FROM CITY;
