@@ -12,8 +12,10 @@ This repository contains my personal solutions to SQL challenges on [HackerRank]
 - `06_Alternative_Queries`: Using CASE, IF, or nested queries.
 
 Each `.sql` file is named based on the problem title and contains:
-- A short comment about the problem.
-- The SQL code that solves it.
+- A short comment explaining the problem.
+- Clean and tested SQL code written for **MS SQL Server**.
+
+---
 
 ## 📚 Example
 
