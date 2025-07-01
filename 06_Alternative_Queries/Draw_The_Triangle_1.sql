@@ -1,0 +1,41 @@
+-- P(R) represents a pattern drawn by Julia in R rows. The following pattern represents P(5):
+
+/* 
+
+* * * * * 
+* * * * 
+* * * 
+* * 
+*
+
+*/
+-- Write a query to print the pattern P(20).
+
+SELECT REPLICATE('* ', number) AS pattern
+FROM master..spt_values
+WHERE type = 'P' AND number BETWEEN 1 AND 20
+ORDER BY number DESC;
+
+/* OR */
+/*
+SELECT REPLICATE('* ', 20)
+UNION ALL SELECT REPLICATE('* ', 19)
+UNION ALL SELECT REPLICATE('* ', 18)
+UNION ALL SELECT REPLICATE('* ', 17)
+UNION ALL SELECT REPLICATE('* ', 16)
+UNION ALL SELECT REPLICATE('* ', 15)
+UNION ALL SELECT REPLICATE('* ', 14)
+UNION ALL SELECT REPLICATE('* ', 13)
+UNION ALL SELECT REPLICATE('* ', 12)
+UNION ALL SELECT REPLICATE('* ', 11)
+UNION ALL SELECT REPLICATE('* ', 10)
+UNION ALL SELECT REPLICATE('* ', 9)
+UNION ALL SELECT REPLICATE('* ', 8)
+UNION ALL SELECT REPLICATE('* ', 7)
+UNION ALL SELECT REPLICATE('* ', 6)
+UNION ALL SELECT REPLICATE('* ', 5)
+UNION ALL SELECT REPLICATE('* ', 4)
+UNION ALL SELECT REPLICATE('* ', 3)
+UNION ALL SELECT REPLICATE('* ', 2)
+UNION ALL SELECT REPLICATE('* ', 1);
+*/
